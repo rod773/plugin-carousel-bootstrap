@@ -12,6 +12,8 @@ wrapper.appendChild(el);
 
 wrapper.id = "slider";
 
+wrapper.classList = "carousel slide";
+
 var myCarousel = document.querySelector("#slider");
 
 var carousel = new bootstrap.Carousel(myCarousel);
