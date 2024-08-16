@@ -15,7 +15,7 @@ License URI:
 
 function load_bootstrap(){
     
-   //$path = plugin_dir_url( __FILE__ );
+    $path = plugin_dir_url( __FILE__ );
 
 
     wp_enqueue_style('bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', date("h:i:s"));
@@ -23,6 +23,10 @@ function load_bootstrap(){
 
 
     wp_enqueue_script('bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', [], date("h:i:s"), true);
+
+
+     wp_enqueue_script('script_js', $path.'script.js', [], date("h:i:s"), true);
+
 
    
 }

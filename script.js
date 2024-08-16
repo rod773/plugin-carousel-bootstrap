@@ -1,5 +1,7 @@
 const el = document.querySelector(".carousel-inner");
 
+console.log(el);
+
 var wrapper = document.createElement("div");
 
 // insert wrapper before el in the DOM tree
